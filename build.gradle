@@ -1,0 +1,26 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.5.10'
+}
+
+apply plugin: 'maven-publish'
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId 'org.brandjunhoe'
+            artifactId 'e-commerce-common-module'
+            version '0.1'
+            from components.java
+        }
+    }
+}
+
+group 'org.brandjunhoe'
+version '1.0.1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+}
