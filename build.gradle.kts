@@ -12,15 +12,15 @@ publishing {
     publications {
         create<MavenPublication>("maven") {
             groupId = "org.brandjunhoe"
-            artifactId = "com.brandjunhoe.e-commerce-common-module"
-            version = "1.0.5"
+            artifactId = "org.brandjunhoe:e-commerce-com.brandjunhoe.common-module"
+            version = "1.0.6"
             from(components["java"])
         }
     }
 }
 
 group = "org.brandjunhoe"
-version = "1.0.1"
+version = "1.0.6"
 
 
 repositories {
