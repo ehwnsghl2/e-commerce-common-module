@@ -13,7 +13,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "org.brandjunhoe"
             artifactId = "com.brandjunhoe.e-commerce-common-module"
-            version = "1.0.1"
+            version = "1.0.5"
             from(components["java"])
         }
     }
