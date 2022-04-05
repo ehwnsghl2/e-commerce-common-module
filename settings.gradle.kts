@@ -1,3 +1,3 @@
-rootProject.name = "e-commerce-common-module"
+rootProject.name = "e-commerce-com.brandjunhoe.common-module"
 
 
