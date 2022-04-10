@@ -1,8 +1,5 @@
 package com.brandjunhoe.common.exception
 
-import org.springframework.http.HttpStatus
-import java.lang.RuntimeException
-
 /**
  * Exception 커스텀 예외 클래스 설계
  * https://jsonobject.tistory.com/501

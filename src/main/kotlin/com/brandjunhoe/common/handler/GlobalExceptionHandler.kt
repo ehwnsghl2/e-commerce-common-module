@@ -1,7 +1,7 @@
 package com.brandjunhoe.common.handler
 
-import com.brandjunhoe.common.code.ErrorException
 import com.brandjunhoe.common.code.ErrorCode
+import com.brandjunhoe.common.code.ErrorException
 import com.brandjunhoe.common.exception.BadRequestException
 import com.brandjunhoe.common.exception.DataNotFoundException
 import com.brandjunhoe.common.response.CommonResponse
@@ -14,13 +14,11 @@ import org.springframework.web.HttpRequestMethodNotSupportedException
 import org.springframework.web.bind.MethodArgumentNotValidException
 import org.springframework.web.bind.annotation.ExceptionHandler
 import org.springframework.web.bind.annotation.RestControllerAdvice
-import org.springframework.web.context.request.WebRequest
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException
 import org.springframework.web.multipart.MaxUploadSizeExceededException
 import java.io.IOException
 import java.util.*
 import javax.naming.AuthenticationException
-import javax.servlet.http.HttpServletRequest
 
 @RestControllerAdvice
 @Order(Ordered.HIGHEST_PRECEDENCE)
