@@ -1,3 +1,4 @@
+/*
 package com.brandjunhoe.common.domain
 
 import java.util.*
@@ -21,3 +22,4 @@ open class DateDeleteColumnEntity(
 
 }
 
+*/

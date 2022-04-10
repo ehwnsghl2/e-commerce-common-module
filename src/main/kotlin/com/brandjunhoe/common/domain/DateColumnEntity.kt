@@ -1,3 +1,4 @@
+/*
 package com.brandjunhoe.common.domain
 
 import org.hibernate.annotations.CreationTimestamp
@@ -22,3 +23,4 @@ open class DateColumnEntity(
         val moddate: Date? = null
 
 )
+*/
