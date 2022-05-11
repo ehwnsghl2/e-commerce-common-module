@@ -1,3 +1,4 @@
+/*
 package com.brandjunhoe.common.handler
 
 import com.brandjunhoe.common.code.ErrorCode
@@ -83,12 +84,15 @@ class GlobalExceptionHandler {
 
         println(e.message)
 
-        return CommonResponse(errorCode.code, e.message.toString()/*errorCode.message*/)
+        return CommonResponse(errorCode.code, e.message.toString()*/
+/*errorCode.message*//*
+)
 
     }
 
 
-    /* @ExceptionHandler(value = [
+    */
+/* @ExceptionHandler(value = [
          Exception::class
      ])
      @Throws(Exception::class)
@@ -99,14 +103,18 @@ class GlobalExceptionHandler {
          ErrorUtils.errorWriter(CLASS_NAME, ErrorUtils.getResErrorDTO(HttpStatus.INTERNAL_SERVER_ERROR.value()), ERROR_TITLE, errorMap, e)
          return CommonResponse(HttpStatus.INTERNAL_SERVER_ERROR.value(), e.message
              ?: HttpStatus.INTERNAL_SERVER_ERROR.reasonPhrase, errorMap)
-     }*/
+     }*//*
 
-    /**
+
+    */
+/**
      * BindException Field 메세지 가공
      * @param bindingResult
      * @return
-     */
-    /*protected fun getBindResultFieldErrorMessage(bindingResult: BindingResult): String {
+     *//*
+
+    */
+/*protected fun getBindResultFieldErrorMessage(bindingResult: BindingResult): String {
         val resultMap: LinkedHashMap<String, Any> = LinkedHashMap()
         resultMap["title"] = "Parameter Validation Error"
         val fieldErrorList = bindingResult.fieldErrors
@@ -119,6 +127,7 @@ class GlobalExceptionHandler {
         }
         resultMap["fields"] = paramList
         return JsonUtils.toMapperPrettyJson(resultMap)
-    }*/
+    }*//*
 
-}
+
+}*/
