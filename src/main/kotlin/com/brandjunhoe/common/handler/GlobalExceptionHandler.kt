@@ -71,7 +71,7 @@ class GlobalExceptionHandler {
             ErrorException.HttpRequestMethodNotSupportedException.name,
             ErrorException.IllegalArgumentException.name,
             ErrorException.FormValidationException.name,
-            // 잘못된 요청
+                // 잘못된 요청
             ErrorException.BadRequestException.name -> ErrorCode.BAD_REQUEST
             // 인증 실패
             ErrorException.AuthenticationException.name -> ErrorCode.UNAUTHORIZED
@@ -83,14 +83,15 @@ class GlobalExceptionHandler {
 
         println(e.message)
 
-        return CommonResponse(errorCode.code, e.message.toString()
-errorCode.message
-)
+        return CommonResponse(
+            errorCode.code, e.message.toString()
+            /*errorCode.message*/
+        )
 
     }
 
 
- @ExceptionHandler(value = [
+/* @ExceptionHandler(value = [
          Exception::class
      ])
      @Throws(Exception::class)
@@ -101,16 +102,13 @@ errorCode.message
          ErrorUtils.errorWriter(CLASS_NAME, ErrorUtils.getResErrorDTO(HttpStatus.INTERNAL_SERVER_ERROR.value()), ERROR_TITLE, errorMap, e)
          return CommonResponse(HttpStatus.INTERNAL_SERVER_ERROR.value(), e.message
              ?: HttpStatus.INTERNAL_SERVER_ERROR.reasonPhrase, errorMap)
-     }
-
-
-*
+     }*/
+    /**
      * BindException Field 메세지 가공
      * @param bindingResult
      * @return
-
-
-protected fun getBindResultFieldErrorMessage(bindingResult: BindingResult): String {
+     */
+/*protected fun getBindResultFieldErrorMessage(bindingResult: BindingResult): String {
         val resultMap: LinkedHashMap<String, Any> = LinkedHashMap()
         resultMap["title"] = "Parameter Validation Error"
         val fieldErrorList = bindingResult.fieldErrors
@@ -123,7 +121,7 @@ protected fun getBindResultFieldErrorMessage(bindingResult: BindingResult): Stri
         }
         resultMap["fields"] = paramList
         return JsonUtils.toMapperPrettyJson(resultMap)
-    }
+    }*/
 
 
 }
