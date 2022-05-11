@@ -30,11 +30,14 @@ repositories {
 
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter")
+    //implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
     //implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.apache.commons:commons-lang3:3.12.0")
+
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
 
@@ -49,6 +52,6 @@ tasks.withType<Test> {
     useJUnitPlatform()
 }
 
-tasks.getByName<Jar>("jar") {
-    enabled = false
-}
+//tasks.getByName<Jar>("jar") {
+//    enabled = false
+//}
