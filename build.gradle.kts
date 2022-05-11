@@ -28,6 +28,11 @@ repositories {
     mavenCentral()
 }
 
+configurations {
+    compileOnly {
+        extendsFrom(configurations.annotationProcessor.get())
+    }
+}
 
 dependencies {
     //implementation("org.springframework.boot:spring-boot-starter")
@@ -52,6 +57,6 @@ tasks.withType<Test> {
     useJUnitPlatform()
 }
 
-tasks.getByName<Jar>("jar") {
-    enabled = false
-}
+//tasks.getByName<Jar>("jar") {
+//    enabled = false
+//}
