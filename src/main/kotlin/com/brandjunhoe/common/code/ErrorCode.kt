@@ -1,4 +1,3 @@
-/*
 package com.brandjunhoe.common.code
 
 import org.springframework.http.HttpStatus
@@ -22,4 +21,4 @@ enum class ErrorCode(val code: Int, val message: String) {
 
 
 
-}*/
+}

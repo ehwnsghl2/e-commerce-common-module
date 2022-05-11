@@ -1,4 +1,3 @@
-/*
 package com.brandjunhoe.common.response
 
 import org.springframework.http.HttpStatus
@@ -20,4 +19,4 @@ data class CommonResponse<T>(
 
     constructor(httpStatus: HttpStatus, content: T) : this(httpStatus.value(), httpStatus.reasonPhrase, content)
 
-}*/
+}

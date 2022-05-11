@@ -1,9 +1,8 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-import java.beans.EventHandler.create
 
 plugins {
-    //id("org.springframework.boot") version "2.6.4"
-    //id("io.spring.dependency-management") version "1.0.11.RELEASE"
+    id("org.springframework.boot") version "2.6.4"
+    id("io.spring.dependency-management") version "1.0.11.RELEASE"
     id ("org.jetbrains.kotlin.jvm") version "1.5.10"
     `maven-publish`
 }
@@ -37,7 +36,7 @@ repositories {
 
 dependencies {
     //implementation("org.springframework.boot:spring-boot-starter")
-    //implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
     //implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     //implementation("org.apache.commons:commons-lang3:3.12.0")
