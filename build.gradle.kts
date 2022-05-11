@@ -13,14 +13,14 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "org.brandjunhoe"
             artifactId = "e-commerce-common-module"
-            version = "1.0.20"
+            version = "1.0.27"
             from(components["java"])
         }
     }
 }
 
 group = "org.brandjunhoe"
-version = "1.0.20"
+version = "1.0.27"
 //java.sourceCompatibility = JavaVersion.VERSION_11
 
 
@@ -39,10 +39,10 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
     //implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-    //implementation("org.apache.commons:commons-lang3:3.12.0")
+    implementation("org.apache.commons:commons-lang3:3.12.0")
 
 
-    //testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
 
