@@ -13,14 +13,14 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "org.brandjunhoe"
             artifactId = "e-commerce-common-module"
-            version = "1.0.35"
+            version = "1.0.36"
             from(components["java"])
         }
     }
 }
 
 group = "org.brandjunhoe"
-version = "1.0.35"
+version = "1.0.36"
 //java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
@@ -63,10 +63,10 @@ tasks.withType<Test> {
 
 
 tasks.jar {
-    enabled = false
+    enabled = true
 }
 
 tasks.bootJar {
-    enabled = true
-    mainClass.set("com.brandjunhoe.Application")
+    enabled = false
+    //mainClass.set("com.brandjunhoe.Application")
 }
