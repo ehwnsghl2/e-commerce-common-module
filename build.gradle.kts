@@ -13,14 +13,14 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "org.brandjunhoe"
             artifactId = "e-commerce-common-module"
-            version = "1.0.36"
+            version = "1.0.35"
             from(components["java"])
         }
     }
 }
 
 group = "org.brandjunhoe"
-version = "1.0.36"
+version = "1.0.35"
 //java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
@@ -40,9 +40,11 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     //implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.apache.commons:commons-lang3:3.12.0")
+    implementation("org.apache.commons:commons-lang3:3.12.0")
 
 
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+    testImplementation("org.springframework.boot:spring-boot-maven-plugin")
 }
 
 
@@ -63,10 +65,10 @@ tasks.withType<Test> {
 
 
 tasks.jar {
-    enabled = true
+    enabled = false
 }
 
 tasks.bootJar {
-    enabled = false
-    //mainClass.set("com.brandjunhoe.Application")
+    enabled = true
+    mainClass.set("com.brandjunhoe.Application")
 }
