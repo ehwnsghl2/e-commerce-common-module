@@ -1,9 +1,10 @@
 package com.brandjunhoe
 
+import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
-//@SpringBootApplication
-//(exclude = [DataSourceAutoConfiguration::class])
+@SpringBootApplication
+open//(exclude = [DataSourceAutoConfiguration::class])
 class Application
 
 fun main(args: Array<String>) {
